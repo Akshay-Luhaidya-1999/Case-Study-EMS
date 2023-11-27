@@ -10,6 +10,7 @@ public class EmployeServiceApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(EmployeServiceApplication.class, args);
+		System.out.println("Welcome");
 	}
 
 }
