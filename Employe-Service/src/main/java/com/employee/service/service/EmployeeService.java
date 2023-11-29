@@ -66,7 +66,6 @@ public class EmployeeService {
             employee.setEmp_last_name(employeeDetails.getEmp_last_name());
             employee.setEmp_email(employeeDetails.getEmp_email());
             employee.setEmp_contact(employeeDetails.getEmp_contact());
-            employee.setEmp_department(employeeDetails.getEmp_department());
             // Update other fields if needed
             return employeeRepository.save(employee);       
         }

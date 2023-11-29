@@ -13,7 +13,6 @@ public class Employee {
 	private String emp_first_name;
 	private String emp_last_name;
 	private String emp_email;
-	private String emp_department;
 	private int emp_contact;
 	
 	//Setter & Getters
@@ -42,12 +41,6 @@ public class Employee {
 	public void setEmp_email(String emp_email) {
 		this.emp_email = emp_email;
 	}
-	public String getEmp_department() {
-		return emp_department;
-	}
-	public void setEmp_department(String emp_department) {
-		this.emp_department = emp_department;
-	}
 	public int getEmp_contact() {
 		return emp_contact;
 	}
@@ -61,28 +54,25 @@ public class Employee {
 	@Override
 	public String toString() {
 		return "Employee [emp_id=" + emp_id + ", emp_first_name=" + emp_first_name + ", emp_last_name=" + emp_last_name
-				+ ", emp_email=" + emp_email + ", emp_department=" + emp_department + ", emp_contact=" + emp_contact
-				+ ", getEmp_id()=" + getEmp_id() + ", getEmp_first_name()=" + getEmp_first_name()
-				+ ", getEmp_last_name()=" + getEmp_last_name() + ", getEmp_email()=" + getEmp_email()
-				+ ", getEmp_department()=" + getEmp_department() + ", getEmp_contact()=" + getEmp_contact()
-				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
-				+ "]";
+				+ ", emp_email=" + emp_email + ", emp_contact=" + emp_contact + ", getEmp_id()=" + getEmp_id()
+				+ ", getEmp_first_name()=" + getEmp_first_name() + ", getEmp_last_name()=" + getEmp_last_name()
+				+ ", getEmp_email()=" + getEmp_email() + ", getEmp_contact()=" + getEmp_contact() + ", getClass()="
+				+ getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
 	}
 	
 	/**
 	 * Constructor to initialize an Employee object with specified values.
 	 */
 	
-	public Employee(int emp_id, String emp_first_name, String emp_last_name, String emp_email, String emp_department,
-			int emp_contact) {
+	public Employee(int emp_id, String emp_first_name, String emp_last_name, String emp_email, int emp_contact) {
 		super();
 		this.emp_id = emp_id;
 		this.emp_first_name = emp_first_name;
 		this.emp_last_name = emp_last_name;
 		this.emp_email = emp_email;
-		this.emp_department = emp_department;
 		this.emp_contact = emp_contact;
 	}
+	
 	
 	/**
 	 * Default constructor.
